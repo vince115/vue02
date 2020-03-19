@@ -18,6 +18,11 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
+  {
+    path: '/maskmap',
+    name: 'MaskMap',
+    component: () => import(/* webpackChunkName: "about" */ '../views/MaskMap.vue'),
+  }
 ];
 
 const router = new VueRouter({
